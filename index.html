@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kanban Board</title>
+  <style>
+    .board {
+      display: flex;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+      background-color: #f2f2f2;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    
+    .card {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kanban Board</h1>
+  
+  <div class="board">
+    <div class="column">
+      <h2>To Do</h2>
+      <div class="card">Task 1</div>
+      <div class="card">Task 2</div>
+      <div class="card">Task 3</div>
+    </div>
+    
+    <div class="column">
+      <h2>In Progress</h2>
+      <div class="card">Task 4</div>
+      <div class="card">Task 5</div>
+    </div>
+    
+    <div class="column">
+      <h2>Done</h2>
+      <div class="card">Task 6</div>
+      <div class="card">Task 7</div>
+      <div class="card">Task 8</div>
+    </div>
+  </div>
+</body>
+</html>
