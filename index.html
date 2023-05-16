@@ -22,16 +22,28 @@
       border-radius: 5px;
     }
   </style>
+  <script>
+    function addTask() {
+      var task = prompt("Digite uma nova tarefa:");
+      if (task !== null && task.trim() !== "") {
+        var newTask = document.createElement("div");
+        newTask.className = "card";
+        newTask.textContent = task;
+        document.getElementById("todo-column").appendChild(newTask);
+      }
+    }
+  </script>
 </head>
 <body>
   <h1>Kanban Board</h1>
   
   <div class="board">
-    <div class="column">
+    <div class="column" id="todo-column">
       <h2>To Do</h2>
       <div class="card">Task 1</div>
       <div class="card">Task 2</div>
       <div class="card">Task 3</div>
+      <button onclick="addTask()">Adicionar Tarefa</button>
     </div>
     
     <div class="column">
